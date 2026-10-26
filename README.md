@@ -113,8 +113,9 @@ GitHub Pages: https://datwassh1sha.github.io/kr1-html-css-shop/
 - Bootsrap-сетку
 - Страницы product.html и order.html
 
-# История выполнения
+## История выполнения
 
+### Changelog №1 
 - Скопирована версия проекта из КР №1
 - Добавлено оформление Bootstrap 5.3.8
 - Тема изменена на тёмную с красными акцентами
