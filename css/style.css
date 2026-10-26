@@ -633,3 +633,176 @@ html {
   background-color: #087f8c;
   color: #ffffff;
 }
+
+/* Баннер предзаказа */
+.preorder-banner {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #383838;
+    border-radius: 16px;
+    background:
+        radial-gradient(
+            ellipse at 80% 50%,
+            rgba(230, 36, 41, 0.13),
+            transparent 55%
+        ),
+        #151515;
+}
+
+/* Блок предзаказа на главной странице */
+.preorder-banner__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    max-height: 480px;
+    object-fit: contain;
+    padding: 1.5rem;
+    transition: transform 0.4s ease;
+}
+
+.preorder-banner:hover .preorder-banner__image {
+    transform: scale(1.035);
+}
+
+.preorder-banner .btn-danger {
+    background-color: #e62429;
+    border-color: #e62429;
+    font-weight: 700;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.preorder-banner .btn-danger:hover {
+    background-color: #bd171d;
+    border-color: #bd171d;
+}
+
+@media (max-width: 991.98px) {
+    .preorder-banner__image {
+        min-height: 0;
+        max-height: 360px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .preorder-banner__image,
+    .preorder-banner .btn-danger {
+        transition: none;
+    }
+}
+
+/* Модальное окно на главной странице */
+
+/* Модальное окно предзаказа RLC */
+.preorder-modal {
+    overflow: hidden;
+    color: var(--color-text);
+    background:
+        radial-gradient(
+            ellipse at 100% 0%,
+            rgba(230, 36, 41, 0.16),
+            transparent 48%
+        ),
+        #191919;
+    border: 1px solid #414141;
+    border-radius: 16px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+}
+
+.preorder-modal__header {
+    align-items: flex-start;
+    border-bottom: 1px solid #353535;
+    padding: 1.5rem;
+}
+
+.preorder-modal__eyebrow {
+    color: #a5a5a5;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.preorder-modal__body {
+    padding: 1.5rem;
+}
+
+.preorder-modal__badge {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    color: #fff;
+    background: #e62429;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.preorder-modal__title {
+    margin-top: 1rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.preorder-modal__description {
+    margin-top: 0.75rem;
+    color: #b7b7b7;
+    line-height: 1.7;
+}
+
+.preorder-modal__notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #242424;
+    border: 1px solid #383838;
+    border-left: 3px solid #e62429;
+    border-radius: 8px;
+}
+
+.preorder-modal__notice-icon {
+    display: grid;
+    flex: 0 0 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    place-items: center;
+    color: #fff;
+    background: #e62429;
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+.preorder-modal__notice strong {
+    font-size: 0.95rem;
+}
+
+.preorder-modal__notice p {
+    margin-top: 0.35rem;
+    color: #a5a5a5;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.preorder-modal__footer {
+    gap: 0.75rem;
+    padding: 1rem 1.5rem 1.5rem;
+    border-top: 0;
+}
+
+.preorder-modal__footer .btn {
+    font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+    .preorder-modal__header,
+    .preorder-modal__body {
+        padding: 1.25rem;
+    }
+
+    .preorder-modal__footer {
+        padding: 0 1.25rem 1.25rem;
+    }
+}

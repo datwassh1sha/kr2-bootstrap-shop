@@ -67,14 +67,106 @@
 
     <main>
       <!-- Основное содержимое страницы -->
-      <section class="hero">
-        <h1>Учебный интернет-магазин</h1>
-        <p>
-          Это стартовая страница магазина коллекционных масштабных моделей.
-          Следите за поступлениями товаров!
-        </p>
-        <a class="button" href="#popular">Перейти к товарам</a>
+      <section class="container my-4 my-lg-5">
+        <div class="row align-items-center g-0 preorder-banner">
+          <div class="col-lg-5 p-4 p-md-5">
+            <span class="badge text-bg-danger mb-3"> RLC EXCLUSIVE </span>
+
+            <h1 class="display-4 fw-bold">
+              RLC Selections Nissan Skyline GTR R34
+            </h1>
+
+            <p class="lead">
+              Красный Nissan Skyline GT-R (R34) от RLC Selections — культовая
+              JDM-легенда в коллекционном исполнении. Агрессивный силуэт,
+              узнаваемый дизайн и внимание к деталям делают эту модель настоящим
+              украшением любой полки.
+            </p>
+
+            <p class="fs-4 fw-bold">Цена: 10000 ₽</p>
+
+            <button
+              class="btn btn-danger btn-lg"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#preorderModal"
+            >
+              Предзаказать
+            </button>
+          </div>
+
+          <div class="col-lg-7">
+            <img
+              src="images/Nissan Skyline R34.jpg"
+              alt="RLC Nissan Skyline R34"
+              class="img-fluid preorder-banner__image"
+            />
+          </div>
+        </div>
       </section>
+
+      <div
+        class="modal fade"
+        id="preorderModal"
+        tabindex="-1"
+        aria-labelledby="preorderModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-secondary">
+              <h2 class="modal-title fs-5" id="preorderModalLabel">
+                Предзаказ скоро откроется
+              </h2>
+
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Закрыть"
+              ></button>
+            </div>
+
+            <div class="modal-body preorder-modal__body">
+              <span class="preorder-modal__badge">COMING SOON</span>
+
+              <h3 class="preorder-modal__title">Nissan Skyline GT-R (R34)</h3>
+
+              <p class="preorder-modal__description">
+                Красная легенда JDM в эксклюзивном исполнении RLC Selections.
+                Готовь место в коллекции.
+              </p>
+
+              <div class="preorder-modal__notice">
+                <span class="preorder-modal__notice-icon">!</span>
+                <div>
+                  <strong>Предзаказ скоро откроется</strong>
+                  <p class="mb-0">
+                    Следи за обновлениями, чтобы не пропустить старт.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer preorder-modal__footer">
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                data-bs-dismiss="modal"
+              >
+                Закрыть
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Понятно, жду
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="section" id="advantages">
         <h2>Преимущества магазина</h2>

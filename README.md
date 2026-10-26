@@ -122,3 +122,7 @@ GitHub Pages: https://datwassh1sha.github.io/kr1-html-css-shop/
 - Внедрён Bootstrap Navbar
 - Каталог переведён на Bootstrap Grid
 - Исправлены цвета бейджей товаров
+
+### Changelog №2
+- На основную страницу добавлен блок с предзаказом эксклюзивной модели
+- Добавлено модальное окно в блоке с предзаказом
