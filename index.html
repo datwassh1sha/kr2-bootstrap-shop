@@ -168,21 +168,14 @@
         </div>
       </div>
 
-      <section class="section" id="advantages">
-        <h2>Преимущества магазина</h2>
-
-        <ul class="advantages-list">
-          <li>быстрая отправка;</li>
-          <li>широкий ассортимент моделей;</li>
-          <li>более 100 продаж</li>
-          <li>удобный сайт.</li>
-        </ul>
-      </section>
-
       <section class="section" id="popular">
-        <h2>Популярные модели Hot Wheels</h2>
+        <div class="popular__header">
+          <h2>Популярные модели <span>Hot Wheels</span></h2>
 
-        <p>Подборка моделей для коллекционеров и любителей автомобилей.</p>
+          <p class="popular__intro">
+            Подборка моделей для коллекционеров и любителей автомобилей.
+          </p>
+        </div>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
           <!-- RWB Porsche 930 -->
@@ -201,7 +194,7 @@
                 </span>
               </a>
 
-              <p class="product-card__category">Hot Wheels</p>
+              <p class="product-card__category">Коллекционная модель</p>
               <h3 class="product-card__title">RWB Porsche 930</h3>
 
               <p class="product-card__description">
@@ -244,7 +237,7 @@
                 </span>
               </a>
 
-              <p class="product-card__category">Hot Wheels</p>
+              <p class="product-card__category">Коллекционная модель</p>
               <h3 class="product-card__title">Porsche 917KH</h3>
 
               <p class="product-card__description">
@@ -313,9 +306,17 @@
           </div>
         </div>
 
-        <p class="mt-4">
-          <a class="button" href="catalog.html">Посмотреть весь каталог</a>
-        </p>
+        <div class="popular__catalog-link">
+          <div class="popular__catalog-text">
+            <span>Ищешь что-то ещё?</span>
+            <p>Исследуй всю коллекцию и найди следующую модель.</p>
+          </div>
+
+          <a class="popular__catalog-button" href="catalog.html">
+            Смотреть весь каталог
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </section>
 
       <section class="section reviews" id="reviews">

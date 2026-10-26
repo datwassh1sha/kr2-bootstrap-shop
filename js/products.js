@@ -36,7 +36,7 @@ const products = {
 
     manufacturer: "Hot Wheels",
     scale: "1:64",
-    material: "Уточнить",
+    material: "Metal/Metal",
     series: "Circuit Legends",
   },
 
@@ -56,7 +56,7 @@ const products = {
 
     manufacturer: "Hot Wheels",
     scale: "1:64",
-    material: "Уточнить",
+    material: "Metal/Metal",
     series: "Silhouettes",
   },
 };
