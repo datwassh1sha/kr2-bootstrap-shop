@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Учебный интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Учебный интернет-магазин" />
+    <meta
+      property="og:description"
+      content="Учебный frontend-проект интернет-магазина."
+    />
+    <meta
+      property="og:image"
+      content="https://username.github.io/kr1-html-css-shop/images/preview.jpg"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+            HOT WHEELS DEALS<span class="text-danger">.</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-danger ms-lg-2" href="order.html">
+                  Мой заказ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Основное содержимое страницы -->
+      <section class="hero">
+        <h1>Учебный интернет-магазин</h1>
+        <p>
+          Это стартовая страница магазина коллекционных масштабных моделей.
+          Следите за поступлениями товаров!
+        </p>
+        <a class="button" href="#popular">Перейти к товарам</a>
+      </section>
+
+      <section class="section" id="advantages">
+        <h2>Преимущества магазина</h2>
+
+        <ul class="advantages-list">
+          <li>быстрая отправка;</li>
+          <li>широкий ассортимент моделей;</li>
+          <li>более 100 продаж</li>
+          <li>удобный сайт.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="popular">
+        <h2>Популярные модели Hot Wheels</h2>
+
+        <p>Подборка моделей для коллекционеров и любителей автомобилей.</p>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <a class="product-card__image-link" href="catalog.html">
+              <img
+                class="product-card__image"
+                src="images/product-1.webp"
+                alt="Модель Hot Wheels 1"
+                width="400"
+                height="300"
+              />
+              <span class="product-card__badge product-card__badge--new">
+                Новинка
+              </span>
+            </a>
+
+            <p class="product-card__category">Hot Wheels</p>
+            <h3 class="product-card__title">RWB Porsche 930</h3>
+
+            <p class="product-card__description">
+              Икона стиля, созданная мастером RWB Акирой Накаи - RWB Porsche
+              930!
+            </p>
+
+            <ul class="product-card__specs">
+              <li>Серия: Premium</li>
+              <li>Сет: Silhouettes</li>
+              <li>Год выпуска: 2025</li>
+            </ul>
+
+            <p class="product-card__price">1000 руб.</p>
+            <button
+              class="button product-card__button"
+              type="button"
+              data-product="RWB Porcshe 930"
+            >
+              Заказать
+            </button>
+          </article>
+
+          <article class="product-card">
+            <a class="product-card__image-link" href="catalog.html">
+              <img
+                class="product-card__image"
+                src="images/product-2.webp"
+                alt="Модель Hot Wheels 2"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <span class="product-card__badge product-card__badge--new">
+                Новинка
+              </span>
+            </a>
+
+            <p class="product-card__category">Hot Wheels</p>
+            <h3 class="product-card__title">Porsche 917KH</h3>
+
+            <p class="product-card__description">
+              Прикоснись к гоночной легенде 1960-х годов с моделью Porsche
+              917KH!
+            </p>
+
+            <ul class="product-card__specs">
+              <li>Серия: Premium</li>
+              <li>Сет: Circuit Legends</li>
+              <li>Год выпуска: 2025</li>
+            </ul>
+
+            <p class="product-card__price">1500 руб.</p>
+
+            <button
+              class="button product-card__button"
+              type="button"
+              data-product="Porcshe 917KH"
+            >
+              Заказать
+            </button>
+          </article>
+
+          <article class="product-card">
+            <a class="product-card__image-link" href="catalog.html">
+              <img
+                class="product-card__image"
+                src="images/product-3.webp"
+                alt="Модель Hot Wheels 3"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+              <span class="product-card__badge product-card__badge--new">
+                Новинка
+              </span>
+            </a>
+
+            <p class="product-card__category">Коллекционная модель</p>
+            <h3 class="product-card__title">Porsche Carrera GT</h3>
+
+            <p class="product-card__description">
+              Почувствуй скорость и азарт с моделью Porcshe Carrera GT!
+            </p>
+
+            <ul class="product-card__specs">
+              <li>Серия: Premium</li>
+              <li>Сет: Timless Icons</li>
+              <li>Год выпуска: 2025</li>
+            </ul>
+
+            <p class="product-card__price">2000 руб.</p>
+
+            <button
+              class="button product-card__button"
+              type="button"
+              data-product="Porcshe Carrera GT"
+            >
+              Заказать
+            </button>
+          </article>
+        </div>
+
+        <p>
+          <a class="button" href="catalog.html">Посмотреть весь каталог</a>
+        </p>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <h2>Отзывы коллекционеров</h2>
+
+        <p class="reviews__intro">
+          Мнения покупателей о моделях и качестве сервиса.
+        </p>
+
+        <div class="reviews__grid">
+          <article class="review-card">
+            <div class="review-card__header">
+              <h3>Алексей</h3>
+              <p class="review-card__rating" aria-label="Оценка: 5 из 5">
+                ★★★★★
+              </p>
+            </div>
+
+            <p class="review-card__date">12 сентября 2026</p>
+
+            <p>
+              Отличная детализация модели, качественная окраска и интересный
+              автомобиль в коллекции. Сайт пушка, от души!
+            </p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__header">
+              <h3>Максим</h3>
+              <p class="review-card__rating" aria-label="Оценка: 4 из 5">
+                ★★★★☆
+              </p>
+            </div>
+
+            <p class="review-card__date">20 сентября 2026</p>
+
+            <p>
+              Хорошая модель за свою цену. Хотелось бы видеть больше вариантов
+              окраски.
+            </p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__header">
+              <h3>Илья</h3>
+              <p class="review-card__rating" aria-label="Оценка: 5 из 5">
+                ★★★★★
+              </p>
+            </div>
+
+            <p class="review-card__date">25 сентября 2026</p>
+
+            <p>
+              Модель отлично смотрится на полке рядом с остальными автомобилями
+              коллекции.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+
+    <dialog
+      class="order-dialog"
+      id="order-dialog"
+      aria-labelledby="order-dialog-title"
+    >
+      <h2 id="order-dialog-title">Оформление заявки</h2>
+
+      <form
+        class="order-form"
+        id="order-form"
+        action="#"
+        method="post"
+        novalidate
+      >
+        <input id="selected-product" name="selected-product" type="hidden" />
+
+        <div class="form-field">
+          <label for="order-name">Имя</label>
+          <input
+            id="order-name"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            minlength="2"
+            autocomplete="given-name"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="order-email">E-mail</label>
+          <input
+            id="order-email"
+            name="email"
+            type="email"
+            placeholder="example@mail.ru"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="order-phone">Телефон</label>
+          <input
+            id="order-phone"
+            name="phone"
+            type="tel"
+            inputmode="tel"
+            placeholder="+7 (900) 000-00-00"
+            pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+            required
+          />
+          <small>Формат: +7 (900) 000-00-00</small>
+        </div>
+
+        <div class="form-field">
+          <label for="order-date">Дата связи</label>
+          <input id="order-date" name="date" type="date" />
+        </div>
+
+        <div class="form-field">
+          <label for="order-topic">Тема заявки</label>
+          <select id="order-topic" name="topic" required>
+            <option value="">Выберите тему</option>
+            <option value="product">Заказ товара</option>
+            <option value="consultation">Консультация</option>
+            <option value="delivery">Доставка</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="order-comment">Комментарий</label>
+          <textarea
+            id="order-comment"
+            name="comment"
+            rows="4"
+            placeholder="Укажите дополнительную информацию"
+          ></textarea>
+        </div>
+
+        <div class="form-field form-field--checkbox">
+          <label>
+            <input
+              id="order-agreement"
+              name="agreement"
+              type="checkbox"
+              required
+            />
+            Я согласен на обработку данных
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="close-order-dialog">Закрыть</button>
+          <button type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </dialog>
+
+    <p class="success-message" id="success-message" hidden>
+      Форма успешно отправлена!
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
