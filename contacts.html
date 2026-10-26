@@ -58,8 +58,14 @@
                 <a class="nav-link" href="contacts.html">Контакты</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-danger ms-lg-2" href="order.html">
+                <a href="order.html" class="nav-link">
                   Мой заказ
+                  <span
+                    class="badge bg-danger"
+                    id="cart-count"
+                    aria-label="Количество товаров в корзине"
+                    >0</span
+                  >
                 </a>
               </li>
             </ul>
@@ -108,5 +114,6 @@
       <p>Дисциплина: Фронтенд и бэкенд разработка</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart-counter.js"></script>
   </body>
 </html>

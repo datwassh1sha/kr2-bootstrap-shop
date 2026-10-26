@@ -78,3 +78,35 @@ if (product.badge === "Новинка") {
     status.textContent = "● Нет в наличии";
   }
 }
+
+// Добавление товара в корзину
+const addToCartButton = document.querySelector("#add-to-cart");
+const cartMessage = document.querySelector("#cart-message");
+
+addToCartButton.disabled = !product.available;
+
+if (!product.available) {
+  addToCartButton.textContent = "Нет в наличии";
+}
+
+addToCartButton.addEventListener("click", () => {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const existingProduct = cart.find((item) => item.id === productId);
+
+  if (existingProduct) {
+    existingProduct.quantity += 1;
+  } else {
+    cart.push({
+      id: productId,
+      title: product.title,
+      price: product.price,
+      image: product.image,
+      quantity: 1,
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  window.dispatchEvent(new Event("cartUpdated"));
+  cartMessage.textContent = "Товар добавлен в корзину!";
+});
