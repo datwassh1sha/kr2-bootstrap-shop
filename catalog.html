@@ -71,10 +71,16 @@
     </header>
 
     <main>
-      <nav class="breadcrumbs" aria-label="Хлебные крошки">
-        <a href="index.html">Главная</a>
-        <span>Каталог</span>
-      </nav>
+      <section class="container py-3">
+        <nav aria-label="Навигационная цепочка">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+      </section>
 
       <section class="section">
         <h1>Каталог товаров</h1>
@@ -181,14 +187,14 @@
           <h2>Список товаров</h2>
 
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-            <!-- Карточка 1 -->
+            <!-- Карточка 1: RWB Porsche 930 -->
             <div class="col">
               <article class="product-card h-100">
                 <div class="product-card__image-wrapper">
                   <img
                     class="product-card__image"
-                    src="images/product-1.webp"
-                    alt="RWB Porsche 930"
+                    src="images/RWB 930.webp"
+                    alt="Белая модель RWB Porsche 930 Hot Wheels"
                     width="400"
                     height="300"
                   />
@@ -213,36 +219,40 @@
                 </ul>
 
                 <p class="product-card__price">1000 руб.</p>
-
-                <a href="product.html" class="btn btn-danger mt-auto">
+                <a
+                  class="btn btn-outline-light"
+                  href="product.html?id=porsche-930-rwb-silhouettes"
+                >
                   Подробнее
                 </a>
               </article>
             </div>
 
-            <!-- Карточка 2 -->
+            <!-- Карточка 2: Porsche 917KH Gulf -->
             <div class="col">
               <article class="product-card h-100">
                 <div class="product-card__image-wrapper">
                   <img
                     class="product-card__image"
-                    src="images/product-2.webp"
-                    alt="Porsche 917KH"
+                    src="images/917KH.webp"
+                    alt="Porsche 917KH в гоночной ливрее Gulf"
                     width="400"
                     height="300"
                   />
 
-                  <span class="product-card__badge product-card__badge--limited">
+                  <span
+                    class="product-card__badge product-card__badge--limited"
+                  >
                     Лимитка
                   </span>
                 </div>
 
                 <p class="product-card__category">Premium</p>
-                <h3 class="product-card__title">Porsche 917KH</h3>
+                <h3 class="product-card__title">Porsche 917KH Gulf</h3>
 
                 <p class="product-card__description">
-                  Прикоснись к гоночной легенде 1960-х годов с моделью Porsche
-                  917KH!
+                  Прикоснись к гоночной легенде с моделью Porsche 917KH в
+                  культовой ливрее Gulf!
                 </p>
 
                 <ul class="product-card__specs">
@@ -252,21 +262,23 @@
                 </ul>
 
                 <p class="product-card__price">1500 руб.</p>
-
-                <a href="product.html" class="btn btn-danger mt-auto">
+                <a
+                  class="btn btn-outline-light"
+                  href="product.html?id=porsche-917kh-gulf"
+                >
                   Подробнее
                 </a>
               </article>
             </div>
 
-            <!-- Карточка 3 -->
+            <!-- Карточка 3: Porsche Carrera GT -->
             <div class="col">
               <article class="product-card h-100">
                 <div class="product-card__image-wrapper">
                   <img
                     class="product-card__image"
-                    src="images/product-3.webp"
-                    alt="Porsche Carrera GT"
+                    src="images/Carrera GT.webp"
+                    alt="Porsche Carrera GT Hot Wheels"
                     width="400"
                     height="300"
                   />
@@ -290,119 +302,10 @@
                 </ul>
 
                 <p class="product-card__price">2000 руб.</p>
-
-                <a href="product.html" class="btn btn-danger mt-auto">
-                  Подробнее
-                </a>
-              </article>
-            </div>
-            <!-- Карточка 3 -->
-            <div class="col">
-              <article class="product-card h-100">
-                <div class="product-card__image-wrapper">
-                  <img
-                    class="product-card__image"
-                    src="images/product-3.webp"
-                    alt="Porsche Carrera GT"
-                    width="400"
-                    height="300"
-                  />
-
-                  <span class="product-card__badge product-card__badge--hit">
-                    Хит
-                  </span>
-                </div>
-
-                <p class="product-card__category">Premium</p>
-                <h3 class="product-card__title">Porsche Carrera GT</h3>
-
-                <p class="product-card__description">
-                  Почувствуй скорость и азарт с моделью Porsche Carrera GT!
-                </p>
-
-                <ul class="product-card__specs">
-                  <li>Бренд: Porsche</li>
-                  <li>Серия: Timeless Icons</li>
-                  <li>Год выпуска: 2025</li>
-                </ul>
-
-                <p class="product-card__price">2000 руб.</p>
-
-                <a href="product.html" class="btn btn-danger mt-auto">
-                  Подробнее
-                </a>
-              </article>
-            </div>
-            <!-- Карточка 3 -->
-            <div class="col">
-              <article class="product-card h-100">
-                <div class="product-card__image-wrapper">
-                  <img
-                    class="product-card__image"
-                    src="images/product-3.webp"
-                    alt="Porsche Carrera GT"
-                    width="400"
-                    height="300"
-                  />
-
-                  <span class="product-card__badge product-card__badge--hit">
-                    Хит
-                  </span>
-                </div>
-
-                <p class="product-card__category">Premium</p>
-                <h3 class="product-card__title">Porsche Carrera GT</h3>
-
-                <p class="product-card__description">
-                  Почувствуй скорость и азарт с моделью Porsche Carrera GT!
-                </p>
-
-                <ul class="product-card__specs">
-                  <li>Бренд: Porsche</li>
-                  <li>Серия: Timeless Icons</li>
-                  <li>Год выпуска: 2025</li>
-                </ul>
-
-                <p class="product-card__price">2000 руб.</p>
-
-                <a href="product.html" class="btn btn-danger mt-auto">
-                  Подробнее
-                </a>
-              </article>
-            </div>
-            <!-- Карточка 3 -->
-            <div class="col">
-              <article class="product-card h-100">
-                <div class="product-card__image-wrapper">
-                  <img
-                    class="product-card__image"
-                    src="images/product-3.webp"
-                    alt="Porsche Carrera GT"
-                    width="400"
-                    height="300"
-                  />
-
-                  <span class="product-card__badge product-card__badge--hit">
-                    Хит
-                  </span>
-                </div>
-
-                <p class="product-card__category">Premium</p>
-                <h3 class="product-card__title">Porsche Carrera GT</h3>
-
-                <p class="product-card__description">
-                  Почувствуй скорость и азарт с моделью Porsche Carrera GT!
-                </p>
-
-                <ul class="product-card__specs">
-                  <li>Бренд: Porsche</li>
-                  <li>Серия: Timeless Icons</li>
-                  <li>Год выпуска: 2025</li>
-                </ul>
-
-                <p class="product-card__price">2500 руб.</p>
-
-                <a href="product.html" class="btn btn-danger mt-auto">
+                <a
+                  class="btn btn-outline-light"
+                  href="product.html?id=porsche-carrera-gt"
+                >
                   Подробнее
                 </a>
               </article>
