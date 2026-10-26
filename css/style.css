@@ -806,3 +806,298 @@ html {
         padding: 0 1.25rem 1.25rem;
     }
 }
+
+
+/* =========================================
+   Страница товара
+   ========================================= */
+
+/* Хлебные крошки */
+.breadcrumb {
+    margin-bottom: 0;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--color-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb-item.active {
+    color: var(--color-text);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--color-muted);
+}
+
+/* Галерея товара */
+.product-gallery {
+    overflow: hidden;
+    padding: 1rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.product-gallery > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+}
+
+.product-gallery:hover > img {
+    transform: scale(1.025);
+}
+
+/* Информация о товаре */
+.product-info {
+    height: 100%;
+    padding: 1.5rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.product-info .badge {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.product-info h1 {
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+.product-info .lead {
+    margin-top: 1rem;
+    color: var(--color-muted);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.product-info .fs-2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+}
+
+.product-info .btn {
+    font-weight: 700;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.product-info .btn-danger {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.product-info .btn-danger:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+.product-info .btn-outline-light:hover {
+    color: var(--color-bg);
+}
+
+/* Карточки доставки и оплаты */
+.product-service-card {
+    height: 100%;
+    color: var(--color-text);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.product-service-card:hover {
+    background-color: var(--color-surface-accent);
+    border-color: var(--color-primary);
+}
+
+.product-service-card .card-body {
+    padding: 1.25rem;
+}
+
+.product-service-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    color: var(--color-primary);
+    background-color: rgba(230, 36, 41, 0.1);
+    border: 1px solid rgba(230, 36, 41, 0.25);
+    border-radius: var(--radius-md);
+}
+
+.product-service-card__list {
+    display: grid;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-service-card__list li {
+    position: relative;
+    padding-left: 1rem;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.product-service-card__list li::before {
+    position: absolute;
+    top: 0.55em;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    content: "";
+}
+
+/* Описание товара */
+.product-description {
+    max-width: 850px;
+}
+
+.product-description p {
+    color: var(--color-muted);
+    line-height: 1.9;
+}
+
+/* Таблица характеристик */
+.table-responsive {
+    overflow-x: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.table {
+    --bs-table-bg: var(--color-surface);
+    --bs-table-color: var(--color-text);
+    --bs-table-border-color: var(--color-border);
+    --bs-table-striped-bg: var(--color-surface-accent);
+    --bs-table-striped-color: var(--color-text);
+
+    margin-bottom: 0;
+}
+
+.table th,
+.table td {
+    padding: 1rem 1.25rem;
+    vertical-align: middle;
+}
+
+.table th {
+    width: 40%;
+    font-weight: 600;
+}
+
+.table td {
+    color: var(--color-muted);
+}
+
+/* Адаптивность страницы товара */
+@media (max-width: 991.98px) {
+    .product-info {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .product-gallery {
+        padding: 0.75rem;
+    }
+
+    .product-info {
+        padding: 1rem;
+    }
+
+    .product-info h1 {
+        font-size: 2rem;
+    }
+
+    .product-info .btn {
+        width: 100%;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Учитываем настройки уменьшения анимации */
+@media (prefers-reduced-motion: reduce) {
+    .product-gallery > img,
+    .product-service-card,
+    .product-info .btn,
+    .breadcrumb a {
+        transition: none;
+    }
+}
+
+/* Галерея товара */
+.product-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    padding: 1.5rem;
+}
+
+.product-gallery > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 560px;
+    aspect-ratio: auto;
+    object-fit: contain;
+}
+
+/* Статус наличия товара */
+.product-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* В наличии */
+.product-status--available {
+    color: #63d889;
+    background-color: rgba(69, 179, 107, 0.12);
+    border-color: rgba(69, 179, 107, 0.3);
+}
+
+/* Нет в наличии */
+.product-status--unavailable {
+    color: #ff7377;
+    background-color: rgba(230, 36, 41, 0.12);
+    border-color: rgba(230, 36, 41, 0.3);
+}
+
